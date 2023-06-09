@@ -8,5 +8,10 @@
   "directory": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/build",
   "command": "C:\\msys64\\mingw64\\bin\\gcc.exe   -g -std=gnu99 -o CMakeFiles\\CPU_Analyzer.dir\\Reader.c.obj -c \"C:\\Users\\Dawid Zadlo\\Desktop\\CPU_Analyzer\\Reader.c\"",
   "file": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/Reader.c"
+},
+{
+  "directory": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe   -g -std=gnu99 -o CMakeFiles\\CPU_Analyzer.dir\\Analyzer.c.obj -c \"C:\\Users\\Dawid Zadlo\\Desktop\\CPU_Analyzer\\Analyzer.c\"",
+  "file": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/Analyzer.c"
 }
 ]

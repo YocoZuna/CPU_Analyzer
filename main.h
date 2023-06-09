@@ -2,6 +2,7 @@
 #define _MAIN_H_
 #include <stdio.h>
 #include "Reader.h"
+#include "Analyzer.h"
 #include <string.h>
 #include <stdlib.h>
 #include <pthread.h>
@@ -9,8 +10,8 @@
 #include <assert.h>
 #include <semaphore.h>
 #include <signal.h>
-#define NUMOFTHREADS 1
-#define NUMOFSEMA 2
-#define NUMOFMUTEX 1
+#define NUMOFTHREADS 2
+#define NUMOFSEMA 4
+#define NUMOFMUTEX 2
 void ShutDownProgram(int signum);
 #endif

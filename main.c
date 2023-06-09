@@ -6,9 +6,14 @@ sem_t semaphoreWaitForData;
 sem_t semaphoreDataReady;
 pthread_mutex_t mutex;
 
+/* Semaphores and mutex to synchronize Aanalyzer and Readr*/
+sem_t semaphorePrintStart;
+sem_t semaphorePrintDone;
+pthread_mutex_t mutexPrinter;
+
 pthread_t threadID[NUMOFTHREADS];
-sem_t* SemaphorArray[NUMOFSEMA] = {&semaphoreDataReady,&semaphoreWaitForData};
-pthread_mutex_t * MutexesArray[NUMOFMUTEX] = {&mutex};
+sem_t* SemaphorArray[NUMOFSEMA] = {&semaphoreDataReady,&semaphorePrintDone,&semaphorePrintStart,&semaphoreWaitForData};
+pthread_mutex_t * MutexesArray[NUMOFMUTEX] = {&mutexPrinter,&mutex};
 
 volatile sig_atomic_t done = 0;
 void* pArray  =NULL;
@@ -22,10 +27,12 @@ int main(int, char**){
 
     /* Initialization of mutexes*/
     pthread_mutex_init(&mutex,NULL);
-
+    pthread_mutex_init(&mutexPrinter,NULL);
     /* Initialization of semaphores*/
     sem_init(&semaphoreDataReady,0,0);
     sem_init(&semaphoreWaitForData,0,1);
+    sem_init(&semaphorePrintStart,0,0);
+    sem_init(&semaphorePrintDone,0,1);
 
 
     int t;
@@ -41,6 +48,10 @@ int main(int, char**){
         .semDataReady = semaphoreDataReady,
         .semWaitForData = semaphoreWaitForData,
         .mutex = mutex,
+        .mutexPrint = mutexPrinter,
+        .semPrinterDone = semaphorePrintDone,
+        .semPrinterStart = semaphorePrintStart,
+        .Printer = NULL,
     };
     Reader_Typdef* pProcStatData = &ProcStatData;
         /* Starting threads*/
@@ -50,6 +61,11 @@ int main(int, char**){
         if(t==0)
         {
            if(pthread_create(&threadID[t],NULL,Reader_ReadDataFromProcStat,(void*)pProcStatData)!=0)
+            printf("Could not creat tread %ld\n",threadID[t]);
+        }
+        else if (t==1)
+        {
+             if(pthread_create(&threadID[t],NULL,Analzyer,(void*)pProcStatData)!=0)
             printf("Could not creat tread %ld\n",threadID[t]);
         }
     }
