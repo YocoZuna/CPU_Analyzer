@@ -7,5 +7,8 @@
 #include <pthread.h>
 #include "unistd.h"
 #include <assert.h>
+#include <semaphore.h>
+
+#define NUMOFTHREADS 1
 
 #endif

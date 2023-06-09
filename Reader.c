@@ -39,3 +39,51 @@ int Reader_ReadHowManyCPUs(void)
     pFile = NULL;
     return res;
 }
+
+/*
+*  Description - Runs Reader thread that reads proc stat
+*
+*  Return  - None
+*
+*  Param  - Reader_Typedef* struct 
+*/
+
+
+
+void* Reader_ReadDataFromProcStat(void* pArray)
+{
+
+    Reader_Typdef* ReaderStruct = NULL;
+    ProcStat_Typedef* Data = NULL;
+    while(1)
+    {
+        
+        FILE *pFile= NULL;
+        pFile = fopen(FILETOOPEN,"r");
+        char dummyBuffor[100];
+        int i,dummy;
+        
+
+        ReaderStruct = pArray;
+        sem_wait(&ReaderStruct->semWaitForData);
+        pthread_mutex_lock(&ReaderStruct->mutex);
+
+        Data = ReaderStruct->ptr;
+        int howManyCPUs = ReaderStruct->size;
+        for (i = 0; i< howManyCPUs;i++)
+        {   
+            
+            fscanf(pFile,"%s %ld %ld %ld %ld %ld %ld %ld %ld\n",Data[i].cpu,&Data[i].user,&Data[i].nice,&Data[i].system,&Data[i].idle,&Data[i].iowait,&Data[i].irq,&Data[i].softirq,&Data[i].steal);
+
+            fseek(pFile,4,SEEK_CUR); 
+            
+        }
+
+        
+        fclose(pFile);
+        sem_post(&ReaderStruct->semDataReady);
+        pthread_mutex_unlock(&ReaderStruct->mutex);
+    }
+
+    pthread_exit(NULL);
+}
