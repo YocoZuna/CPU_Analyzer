@@ -546,6 +546,30 @@ Analyzer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPU_Analyzer.dir\build.make CMakeFiles/CPU_Analyzer.dir/Analyzer.c.s
 .PHONY : Analyzer.c.s
 
+Printer.obj: Printer.c.obj
+.PHONY : Printer.obj
+
+# target to build an object file
+Printer.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPU_Analyzer.dir\build.make CMakeFiles/CPU_Analyzer.dir/Printer.c.obj
+.PHONY : Printer.c.obj
+
+Printer.i: Printer.c.i
+.PHONY : Printer.i
+
+# target to preprocess a source file
+Printer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPU_Analyzer.dir\build.make CMakeFiles/CPU_Analyzer.dir/Printer.c.i
+.PHONY : Printer.c.i
+
+Printer.s: Printer.c.s
+.PHONY : Printer.s
+
+# target to generate assembly for a file
+Printer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPU_Analyzer.dir\build.make CMakeFiles/CPU_Analyzer.dir/Printer.c.s
+.PHONY : Printer.c.s
+
 Reader.obj: Reader.c.obj
 .PHONY : Reader.obj
 
@@ -637,6 +661,9 @@ help:
 	@echo ... Analyzer.obj
 	@echo ... Analyzer.i
 	@echo ... Analyzer.s
+	@echo ... Printer.obj
+	@echo ... Printer.i
+	@echo ... Printer.s
 	@echo ... Reader.obj
 	@echo ... Reader.i
 	@echo ... Reader.s
