@@ -24,13 +24,14 @@ void* Printer(void* pDataToPrint)
 static void Printer_PrintToConsole(Reader_Typdef* DataToPrint,int loops){
         for(int i=0;i<loops-1;i++)
         {
-            if (i==0)
-            {
-                printf("CPU analyzer PID:%d, CPU %d\n",PID,loops);
-            }   
-            
             sem_wait(&DataToPrint->semPrinterStart);
             pthread_mutex_lock(&DataToPrint->mutexPrint);
+            if (i==0)
+            {
+                printf("CPU analyzer PID:%d, CPU %d\n",PID,loops-1);
+            }   
+            
+
             printf("%s\n",(char*)DataToPrint->Printer);
             pthread_mutex_unlock(&DataToPrint->mutexPrint);
             sem_post(&DataToPrint->semPrinterDone);

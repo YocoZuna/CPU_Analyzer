@@ -4,17 +4,17 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/dawidzadlo/Documents/GitHub/CPU_Analyzer
-BuildDirectory: /home/dawidzadlo/Documents/GitHub/CPU_Analyzer/build
+SourceDirectory: /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer
+BuildDirectory: /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: dawidzadlo-Virtual-Machine
+Site: YocoZuna
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Linux-gcc-11
+BuildName: Linux-gcc
 
 # Subprojects
 LabelsForSubprojects: 
@@ -26,8 +26,8 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/dawidzadlo/Documents/GitHub/CPU_Analyzer"
-MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
+ConfigureCommand: "/usr/bin/cmake" "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer"
+MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -75,7 +75,7 @@ CudaSanitizerCommand:
 CudaSanitizerCommandOptions: 
 MemoryCheckType: 
 MemoryCheckSanitizerOptions: 
-MemoryCheckCommand: MEMORYCHECK_COMMAND-NOTFOUND
+MemoryCheckCommand: /usr/bin/valgrind
 MemoryCheckCommandOptions: 
 MemoryCheckSuppressionFile: 
 

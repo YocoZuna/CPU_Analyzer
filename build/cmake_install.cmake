@@ -1,4 +1,4 @@
-# Install script for directory: /home/dawidzadlo/Documents/GitHub/CPU_Analyzer
+# Install script for directory: /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/dawidzadlo/Documents/GitHub/CPU_Analyzer/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
