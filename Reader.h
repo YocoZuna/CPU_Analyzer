@@ -4,6 +4,8 @@
 #include "main.h"
 #define FILETOOPEN "/proc/stat"
 
+extern volatile sig_atomic_t done;
+
 typedef struct 
 {
     char cpu[4];

@@ -7,10 +7,18 @@ sem_t semaphoreDataReady;
 pthread_mutex_t mutex;
 
 pthread_t threadID[NUMOFTHREADS];
+sem_t* SemaphorArray[NUMOFSEMA] = {&semaphoreDataReady,&semaphoreWaitForData};
+pthread_mutex_t * MutexesArray[NUMOFMUTEX] = {&mutex};
+
+volatile sig_atomic_t done = 0;
 void* pArray  =NULL;
 
 int main(int, char**){
 
+    struct sigaction action;
+    action.sa_handler = ShutDownProgram;
+
+    sigaction(SIGTERM,&action,NULL);
 
     /* Initialization of mutexes*/
     pthread_mutex_init(&mutex,NULL);
@@ -47,8 +55,39 @@ int main(int, char**){
     }
     
     /* Infinit loop*/
-    while(1)
+    while(!done)
     {
         sleep(__INT_MAX__);
     }
+}
+
+
+void ShutDownProgram(int signum)
+{
+    /* Free allocated array*/
+
+    
+
+    done=1;
+
+    for(int i=0;i<3;i++)
+    {
+        pthread_join(threadID[i],NULL);
+    }
+
+    free(pArray);
+    /* Destroying muexes and semaphores*/
+    for(int i=0; i<NUMOFMUTEX;i++)
+    {
+        pthread_mutex_destroy(MutexesArray[i]);
+    }
+
+    for(int i = 0; i <NUMOFSEMA;i++)
+    {
+        sem_destroy(SemaphorArray[i]);
+        
+    }
+
+    /* Exiting  program */
+    exit(0);
 }

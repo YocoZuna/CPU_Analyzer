@@ -8,7 +8,9 @@
 #include "unistd.h"
 #include <assert.h>
 #include <semaphore.h>
-
+#include <signal.h>
 #define NUMOFTHREADS 1
-
+#define NUMOFSEMA 2
+#define NUMOFMUTEX 1
+void ShutDownProgram(int signum);
 #endif

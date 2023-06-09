@@ -55,7 +55,7 @@ void* Reader_ReadDataFromProcStat(void* pArray)
 
     Reader_Typdef* ReaderStruct = NULL;
     ProcStat_Typedef* Data = NULL;
-    while(1)
+    while(!done)
     {
         
         FILE *pFile= NULL;
