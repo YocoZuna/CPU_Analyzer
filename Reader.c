@@ -67,7 +67,7 @@ void* Reader_ReadDataFromProcStat(void* pArray)
         ReaderStruct = pArray;
         sem_wait(&ReaderStruct->semWaitForData);
         pthread_mutex_lock(&ReaderStruct->mutex);
-
+        ReaderStruct->WatchDog[0] +=1;
         Data = ReaderStruct->ptr;
         int howManyCPUs = ReaderStruct->size;
         for (i = 0; i< howManyCPUs;i++)

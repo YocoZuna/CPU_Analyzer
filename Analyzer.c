@@ -21,11 +21,13 @@ void* Analzyer(void *DataFromReader)
   long long int idled[howManyCPUs],totald[howManyCPUs];
   
   while(!done)
+
   {
+    ReaderStruct->WatchDog[1] +=1;
     /* Waiting for data from reader and blocking meamory*/
     sem_wait(&ReaderStruct->semDataReady);
     pthread_mutex_lock(&ReaderStruct->mutex);
-        
+    
     /* Collecting /proc/stat data */
     CollectData(PrevData,Data,howManyCPUs,previdle,prevnonIdle,prevtotal);
 

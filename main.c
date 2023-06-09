@@ -19,6 +19,7 @@ pthread_mutex_t * MutexesArray[NUMOFMUTEX] = {&mutexPrinter,&mutex};
 volatile sig_atomic_t done = 0;
 int PID = 0; // PID of this program 
 void* pArray  =NULL;
+
 Analyzer_Typedef* DataToPrinter = NULL;
 
 int main(void){
@@ -44,6 +45,7 @@ int main(void){
 
     /* Allocation ProcStat_Typdef for all of the CPUs*/
     pArray =  malloc(sizeof(ProcStat_Typedef)*howManyCPUs);
+
     PID = getpid();
     
     Reader_Typdef ProcStatData ={
@@ -56,6 +58,7 @@ int main(void){
         .semPrinterDone = semaphorePrintDone,
         .semPrinterStart = semaphorePrintStart,
         .Printer = NULL,
+        
     };
     Reader_Typdef* pProcStatData = &ProcStatData;
         /* Starting threads*/
@@ -72,9 +75,14 @@ int main(void){
              if(pthread_create(&threadID[t],NULL,Analzyer,(void*)pProcStatData)!=0)
             printf("Could not creat tread %ld\n",threadID[t]);
         }
-        else
+        else if (t==2)
         {
              if(pthread_create(&threadID[t],NULL,Printer,(void*)pProcStatData)!=0)
+            printf("Could not creat tread %ld\n",threadID[t]);
+        }
+        else
+        {
+             if(pthread_create(&threadID[t],NULL,WatchDog,(void*)pProcStatData)!=0)
             printf("Could not creat tread %ld\n",threadID[t]);
         }
 
@@ -97,7 +105,9 @@ void ShutDownProgram(int signum)
 
     for(int i=0;i<NUMOFTHREADS;i++)
     {
-        pthread_join(threadID[i],NULL);
+        
+        //pthread_join(threadID[i],NULL);
+        pthread_cancel(threadID[i]);
     }
 
     free(pArray);
