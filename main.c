@@ -16,7 +16,9 @@ sem_t* SemaphorArray[NUMOFSEMA] = {&semaphoreDataReady,&semaphorePrintDone,&sema
 pthread_mutex_t * MutexesArray[NUMOFMUTEX] = {&mutexPrinter,&mutex};
 
 volatile sig_atomic_t done = 0;
+int PID = 0; // PID of this program 
 void* pArray  =NULL;
+Analyzer_Typedef* DataToPrinter = NULL;
 
 int main(int, char**){
 

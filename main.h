@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include "Reader.h"
 #include "Analyzer.h"
+#include "Printer.h"
 #include <string.h>
 #include <stdlib.h>
 #include <pthread.h>
