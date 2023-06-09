@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Site BuildName="Linux-gcc"
+<Site BuildName="Linux-clang++"
 	BuildStamp="20230609-1011-Experimental"
 	Name="YocoZuna"
 	Generator="ctest-3.22.1"
-	CompilerName=""
+	CompilerName="/usr/bin/clang++"
 	CompilerVersion=""
 	OSName="Linux"
 	Hostname="YocoZuna"
@@ -21,14 +21,14 @@
 	TotalVirtualMemory="2047"
 	TotalPhysicalMemory="7303"
 	LogicalProcessorsPerPhysical="1"
-	ProcessorClockFrequency="3983.64"
+	ProcessorClockFrequency="2420.58"
 	>
 	<Testing>
-		<StartDateTime>Jun 09 20:15 CEST</StartDateTime>
-		<StartTestTime>1686334554</StartTestTime>
+		<StartDateTime>Jun 09 21:01 CEST</StartDateTime>
+		<StartTestTime>1686337289</StartTestTime>
 		<TestList/>
-		<EndDateTime>Jun 09 20:15 CEST</EndDateTime>
-		<EndTestTime>1686334554</EndTestTime>
+		<EndDateTime>Jun 09 21:01 CEST</EndDateTime>
+		<EndTestTime>1686337289</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

@@ -35,6 +35,9 @@
 			"compileCommandFragments" : 
 			[
 				{
+					"fragment" : "-O3 -DNDEBUG"
+				},
+				{
 					"fragment" : "-std=gnu11"
 				}
 			],
@@ -61,6 +64,10 @@
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-O3 -DNDEBUG",
+				"role" : "flags"
+			},
 			{
 				"fragment" : "-rdynamic",
 				"role" : "flags"

@@ -21,7 +21,7 @@ int PID = 0; // PID of this program
 void* pArray  =NULL;
 Analyzer_Typedef* DataToPrinter = NULL;
 
-int main(int, char**){
+int main(void){
 
     struct sigaction action;
     action.sa_handler = ShutDownProgram;
