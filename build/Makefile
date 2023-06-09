@@ -522,6 +522,30 @@ CPU_Analyzer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPU_Analyzer.dir\build.make CMakeFiles/CPU_Analyzer.dir/build
 .PHONY : CPU_Analyzer/fast
 
+Reader.obj: Reader.c.obj
+.PHONY : Reader.obj
+
+# target to build an object file
+Reader.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPU_Analyzer.dir\build.make CMakeFiles/CPU_Analyzer.dir/Reader.c.obj
+.PHONY : Reader.c.obj
+
+Reader.i: Reader.c.i
+.PHONY : Reader.i
+
+# target to preprocess a source file
+Reader.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPU_Analyzer.dir\build.make CMakeFiles/CPU_Analyzer.dir/Reader.c.i
+.PHONY : Reader.c.i
+
+Reader.s: Reader.c.s
+.PHONY : Reader.s
+
+# target to generate assembly for a file
+Reader.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPU_Analyzer.dir\build.make CMakeFiles/CPU_Analyzer.dir/Reader.c.s
+.PHONY : Reader.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -586,6 +610,9 @@ help:
 	@echo ... NightlyTest
 	@echo ... NightlyUpdate
 	@echo ... CPU_Analyzer
+	@echo ... Reader.obj
+	@echo ... Reader.i
+	@echo ... Reader.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

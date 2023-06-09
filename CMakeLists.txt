@@ -5,7 +5,9 @@ set(CMAKE_C_STANDARD 99)
 include(CTest)
 enable_testing()
 
-add_executable(CPU_Analyzer main.c)
+add_executable(CPU_Analyzer 
+main.c
+Reader.c)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

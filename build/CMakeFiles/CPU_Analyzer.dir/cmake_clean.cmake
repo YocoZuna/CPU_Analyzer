@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/CPU_Analyzer.dir/Reader.c.obj"
+  "CMakeFiles/CPU_Analyzer.dir/Reader.c.obj.d"
   "CMakeFiles/CPU_Analyzer.dir/main.c.obj"
   "CMakeFiles/CPU_Analyzer.dir/main.c.obj.d"
   "CPU_Analyzer.exe"

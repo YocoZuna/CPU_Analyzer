@@ -836,12 +836,12 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 CMakeFiles/CPU_Analyzer.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPU_Analyzer.dir\build.make CMakeFiles/CPU_Analyzer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPU_Analyzer.dir\build.make CMakeFiles/CPU_Analyzer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Dawid Zadlo\Desktop\CPU_Analyzer\build\CMakeFiles" --progress-num=1,2 "Built target CPU_Analyzer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Dawid Zadlo\Desktop\CPU_Analyzer\build\CMakeFiles" --progress-num=1,2,3 "Built target CPU_Analyzer"
 .PHONY : CMakeFiles/CPU_Analyzer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CPU_Analyzer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Dawid Zadlo\Desktop\CPU_Analyzer\build\CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Dawid Zadlo\Desktop\CPU_Analyzer\build\CMakeFiles" 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/CPU_Analyzer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Dawid Zadlo\Desktop\CPU_Analyzer\build\CMakeFiles" 0
 .PHONY : CMakeFiles/CPU_Analyzer.dir/rule

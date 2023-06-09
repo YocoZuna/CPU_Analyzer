@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/Reader.c" "CMakeFiles/CPU_Analyzer.dir/Reader.c.obj" "gcc" "CMakeFiles/CPU_Analyzer.dir/Reader.c.obj.d"
   "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/main.c" "CMakeFiles/CPU_Analyzer.dir/main.c.obj" "gcc" "CMakeFiles/CPU_Analyzer.dir/main.c.obj.d"
   )
 
