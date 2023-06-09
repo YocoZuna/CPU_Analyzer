@@ -1,16 +1,14 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/CPU_Analyzer.dir/Analyzer.c.obj"
-  "CMakeFiles/CPU_Analyzer.dir/Analyzer.c.obj.d"
-  "CMakeFiles/CPU_Analyzer.dir/Printer.c.obj"
-  "CMakeFiles/CPU_Analyzer.dir/Printer.c.obj.d"
-  "CMakeFiles/CPU_Analyzer.dir/Reader.c.obj"
-  "CMakeFiles/CPU_Analyzer.dir/Reader.c.obj.d"
-  "CMakeFiles/CPU_Analyzer.dir/main.c.obj"
-  "CMakeFiles/CPU_Analyzer.dir/main.c.obj.d"
-  "CPU_Analyzer.exe"
-  "CPU_Analyzer.exe.manifest"
+  "CMakeFiles/CPU_Analyzer.dir/Analyzer.c.o"
+  "CMakeFiles/CPU_Analyzer.dir/Analyzer.c.o.d"
+  "CMakeFiles/CPU_Analyzer.dir/Printer.c.o"
+  "CMakeFiles/CPU_Analyzer.dir/Printer.c.o.d"
+  "CMakeFiles/CPU_Analyzer.dir/Reader.c.o"
+  "CMakeFiles/CPU_Analyzer.dir/Reader.c.o.d"
+  "CMakeFiles/CPU_Analyzer.dir/main.c.o"
+  "CMakeFiles/CPU_Analyzer.dir/main.c.o.d"
+  "CPU_Analyzer"
   "CPU_Analyzer.pdb"
-  "libCPU_Analyzer.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

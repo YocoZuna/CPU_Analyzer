@@ -26,7 +26,7 @@ static void Printer_PrintToConsole(Reader_Typdef* DataToPrint,int loops){
         {
             if (i==0)
             {
-                printf("CPU analyzer PID:%d, CPU %d\n",loops,PID);
+                printf("CPU analyzer PID:%d, CPU %d\n",PID,loops);
             }   
             
             sem_wait(&DataToPrint->semPrinterStart);

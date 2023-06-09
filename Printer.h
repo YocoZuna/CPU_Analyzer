@@ -1,7 +1,9 @@
 #ifndef _PRINTER_H_
 #define _PRINTER_H_
 #include "main.h"
-
+#include <pthread.h>
+#include <signal.h>
+#include <semaphore.h>
 
 #define update() printf("\033[H\033[J")
 

@@ -2,6 +2,9 @@
 #define _READER_H_
 
 #include "main.h"
+#include <pthread.h>
+#include <signal.h>
+#include <semaphore.h>
 #define FILETOOPEN "/proc/stat"
 
 extern volatile sig_atomic_t done;

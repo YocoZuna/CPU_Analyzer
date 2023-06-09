@@ -1,22 +1,22 @@
 [
-{
-  "directory": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/build",
-  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe   -g -std=gnu99 -o CMakeFiles\\CPU_Analyzer.dir\\main.c.obj -c \"C:\\Users\\Dawid Zadlo\\Desktop\\CPU_Analyzer\\main.c\"",
-  "file": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/main.c"
-},
-{
-  "directory": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/build",
-  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe   -g -std=gnu99 -o CMakeFiles\\CPU_Analyzer.dir\\Reader.c.obj -c \"C:\\Users\\Dawid Zadlo\\Desktop\\CPU_Analyzer\\Reader.c\"",
-  "file": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/Reader.c"
-},
-{
-  "directory": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/build",
-  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe   -g -std=gnu99 -o CMakeFiles\\CPU_Analyzer.dir\\Analyzer.c.obj -c \"C:\\Users\\Dawid Zadlo\\Desktop\\CPU_Analyzer\\Analyzer.c\"",
-  "file": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/Analyzer.c"
-},
-{
-  "directory": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/build",
-  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe   -g -std=gnu99 -o CMakeFiles\\CPU_Analyzer.dir\\Printer.c.obj -c \"C:\\Users\\Dawid Zadlo\\Desktop\\CPU_Analyzer\\Printer.c\"",
-  "file": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/Printer.c"
-}
+  {
+    "directory": "/home/dawidzadlo/Documents/GitHub/CPU_Analyzer/build",
+    "command": "/usr/bin/gcc-11 -D_POSIX_C_SOURCE -g -std=gnu11 -o CMakeFiles/CPU_Analyzer.dir/main.c.o -c /home/dawidzadlo/Documents/GitHub/CPU_Analyzer/main.c",
+    "file": "/home/dawidzadlo/Documents/GitHub/CPU_Analyzer/main.c"
+  },
+  {
+    "directory": "/home/dawidzadlo/Documents/GitHub/CPU_Analyzer/build",
+    "command": "/usr/bin/gcc-11 -D_POSIX_C_SOURCE  -g -std=gnu11 -o CMakeFiles/CPU_Analyzer.dir/Reader.c.o -c /home/dawidzadlo/Documents/GitHub/CPU_Analyzer/Reader.c",
+    "file": "/home/dawidzadlo/Documents/GitHub/CPU_Analyzer/Reader.c"
+  },
+  {
+    "directory": "/home/dawidzadlo/Documents/GitHub/CPU_Analyzer/build",
+    "command": "/usr/bin/gcc-11-D_POSIX_C_SOURCE -g -std=gnu11 -o CMakeFiles/CPU_Analyzer.dir/Analyzer.c.o -c /home/dawidzadlo/Documents/GitHub/CPU_Analyzer/Analyzer.c",
+    "file": "/home/dawidzadlo/Documents/GitHub/CPU_Analyzer/Analyzer.c"
+  },
+  {
+    "directory": "/home/dawidzadlo/Documents/GitHub/CPU_Analyzer/build",
+    "command": "/usr/bin/gcc-11 -D_POSIX_C_SOURCE -g -std=gnu11 -o CMakeFiles/CPU_Analyzer.dir/Printer.c.o -c /home/dawidzadlo/Documents/GitHub/CPU_Analyzer/Printer.c",
+    "file": "/home/dawidzadlo/Documents/GitHub/CPU_Analyzer/Printer.c"
+  }
 ]

@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "main.h"
-
+#include <signal.h>
+#include <features.h>
 /* Semaphores and mutex to synchronize Reader and Analyzer*/
 sem_t semaphoreWaitForData;
 sem_t semaphoreDataReady;
@@ -43,7 +44,8 @@ int main(int, char**){
 
     /* Allocation ProcStat_Typdef for all of the CPUs*/
     pArray =  malloc(sizeof(ProcStat_Typedef)*howManyCPUs);
-
+    PID = getpid();
+    
     Reader_Typdef ProcStatData ={
         .size = howManyCPUs,
         .ptr = pArray,
@@ -90,7 +92,6 @@ void ShutDownProgram(int signum)
 {
     /* Free allocated array*/
 
-    
 
     done=1;
 
