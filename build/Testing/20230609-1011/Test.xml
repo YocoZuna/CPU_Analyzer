@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Win32-mingw32-make"
+	BuildStamp="20230609-1011-Experimental"
+	Name="dzadlo"
+	Generator="ctest-3.24.1"
+	CompilerName="C:/msys64/mingw64/bin/g++.exe"
+	CompilerVersion=""
+	OSName="Windows"
+	Hostname="dzadlo"
+	OSRelease=" Professional"
+	OSVersion=" (Build 17763)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="13"
+	ProcessorCacheSize="-1"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="36591"
+	TotalPhysicalMemory="31983"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2495"
+	>
+	<Testing>
+		<StartDateTime>Jun 09 12:12 Central European Daylight Time</StartDateTime>
+		<StartTestTime>1686305534</StartTestTime>
+		<TestList/>
+		<EndDateTime>Jun 09 12:12 Central European Daylight Time</EndDateTime>
+		<EndTestTime>1686305534</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
