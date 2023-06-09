@@ -70,6 +70,12 @@ int main(int, char**){
              if(pthread_create(&threadID[t],NULL,Analzyer,(void*)pProcStatData)!=0)
             printf("Could not creat tread %ld\n",threadID[t]);
         }
+        else
+        {
+             if(pthread_create(&threadID[t],NULL,Printer,(void*)pProcStatData)!=0)
+            printf("Could not creat tread %ld\n",threadID[t]);
+        }
+
     }
     
     /* Infinit loop*/
@@ -88,7 +94,7 @@ void ShutDownProgram(int signum)
 
     done=1;
 
-    for(int i=0;i<3;i++)
+    for(int i=0;i<NUMOFTHREADS;i++)
     {
         pthread_join(threadID[i],NULL);
     }

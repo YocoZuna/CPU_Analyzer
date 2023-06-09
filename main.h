@@ -11,7 +11,7 @@
 #include <assert.h>
 #include <semaphore.h>
 #include <signal.h>
-#define NUMOFTHREADS 2
+#define NUMOFTHREADS 3
 #define NUMOFSEMA 4
 #define NUMOFMUTEX 2
 void ShutDownProgram(int signum);
