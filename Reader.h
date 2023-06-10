@@ -38,7 +38,7 @@ typedef struct
     int WatchDog[4];
 }Reader_Typdef;
 
-/*Functio to read how many CPUs machine has*/
+/*Function  to read how many CPUs machine has*/
 int Reader_ReadHowManyCPUs(void);
 /* Reader Thread*/
 void* Reader_ReadDataFromProcStat(void* pArray);

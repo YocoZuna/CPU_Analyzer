@@ -12,14 +12,18 @@ sem_t semaphorePrintStart;
 sem_t semaphorePrintDone;
 pthread_mutex_t mutexPrinter;
 
+/* This arrays are created only to cleanup with for loops */
 pthread_t threadID[NUMOFTHREADS];
 sem_t* SemaphorArray[NUMOFSEMA] = {&semaphoreDataReady,&semaphorePrintDone,&semaphorePrintStart,&semaphoreWaitForData};
 pthread_mutex_t * MutexesArray[NUMOFMUTEX] = {&mutexPrinter,&mutex};
 
+/* sig_atomic_t value used in Callback */
 volatile sig_atomic_t done = 0;
-int PID = 0; // PID of this program 
-void* pArray  =NULL;
 
+int PID = 0; // PID of this program
+
+/* Array for data from proc stat*/
+void* pArray  =NULL;
 Analyzer_Typedef* DataToPrinter = NULL;
 
 int main(void){
@@ -46,8 +50,10 @@ int main(void){
     /* Allocation ProcStat_Typdef for all of the CPUs*/
     pArray =  malloc(sizeof(ProcStat_Typedef)*howManyCPUs);
 
+    /* Geting PID of this app*/
     PID = getpid();
     
+    /* Initliazation of ProcStatData with semaphores and allocated buffors*/
     Reader_Typdef ProcStatData ={
         .size = howManyCPUs,
         .ptr = pArray,
@@ -58,10 +64,11 @@ int main(void){
         .semPrinterDone = semaphorePrintDone,
         .semPrinterStart = semaphorePrintStart,
         .Printer = NULL,
-        
     };
+    
     Reader_Typdef* pProcStatData = &ProcStatData;
-        /* Starting threads*/
+    
+    /* Starting threads*/
     for (t=0;t<NUMOFTHREADS;t++)
     {   
         
@@ -81,7 +88,8 @@ int main(void){
             printf("Could not creat tread %ld\n",threadID[t]);
         }
         else if (t==3)
-        {
+        {  
+            
              if(pthread_create(&threadID[t],NULL,WatchDog,(void*)pProcStatData)!=0)
             printf("Could not creat tread %ld\n",threadID[t]);
         }
@@ -91,6 +99,7 @@ int main(void){
     /* Infinit loop*/
     while(!done)
     {
+        /* Sleep to give CPU some rest :D */
         sleep(__INT_MAX__);
     }
 }
@@ -98,21 +107,20 @@ int main(void){
 
 void ShutDownProgram(int signum)
 {
-    /* Free allocated array*/
-
-
+    
     done=1;
+    /* Exiting threads*/
     for(int i=0;i<NUMOFTHREADS;i++)
     {
-        int ret = 0;
     
         pthread_cancel(threadID[i]);   
         pthread_join(threadID[i],NULL);
 
     }
 
-
+    /* Free allocated meamory*/
     free(pArray);
+    
     /* Destroying muexes and semaphores*/
     for(int i=0; i<NUMOFMUTEX;i++)
     {

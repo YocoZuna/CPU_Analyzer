@@ -7,8 +7,9 @@ def main():
     TestedFunction = os.system("~/./TestCpu")
     if (TestedFunction==cpu):
         print("Read CPU test passed\n")
+        return 0
     else:
         print("Read CPU test failed\n")
-    
+        return -1
 if __name__ =='__main__':
     main()

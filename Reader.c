@@ -48,9 +48,6 @@ int Reader_ReadHowManyCPUs(void)
 *
 *  Param  - Reader_Typedef* struct 
 */
-
-
-
 void* Reader_ReadDataFromProcStat(void* pArray)
 {
 
@@ -62,9 +59,6 @@ void* Reader_ReadDataFromProcStat(void* pArray)
     int i,dummy;
     while(!done)
     {
-        
-
-        
         
         ReaderStruct = pArray;
         sem_wait(&ReaderStruct->semWaitForData);

@@ -34,7 +34,7 @@ void* Analzyer(void *DataFromReader)
     /* Sleeping 1s beacouse we want thata to apear eevery 1 s*/
     if(done==0)
       sleep(1);
-
+    ReaderStruct->WatchDog[1] +=1;
     /* Free semaphore and meamory*/
     sem_post(&ReaderStruct->semWaitForData);
     pthread_mutex_unlock(&ReaderStruct->mutex);
@@ -48,8 +48,7 @@ void* Analzyer(void *DataFromReader)
     /* Calculation of % usage of CPU */
     for (i = 1; i< howManyCPUs;i++)
     {
-      if(done==1)
-        break;
+
       sem_wait(&ReaderStruct->semPrinterDone);
       pthread_mutex_lock(&ReaderStruct->mutexPrint);
       idled[i] = idle[i] -previdle[i];
@@ -60,7 +59,7 @@ void* Analzyer(void *DataFromReader)
       DataToPrinter[i].total =(((float)totald[i]-(float)idled[i])/(float)totald[i])*100;
       
       /* Sending data to printer thru buffor */
-      snprintf(buffor,27,"CPU:%s,Zuzycie:%0.2f%%",DataToPrinter[i].cpu,DataToPrinter[i].total);
+      snprintf(buffor,27,"Core:%s,Usage:%0.2f%%",DataToPrinter[i].cpu,DataToPrinter[i].total);
       ReaderStruct->Printer = buffor;
       pthread_mutex_unlock(&ReaderStruct->mutexPrint);
       sem_post(&ReaderStruct->semPrinterStart);
@@ -80,8 +79,7 @@ static void CollectData(ProcStat_Typedef* Dest,ProcStat_Typedef* Source,int loop
 {
   for(int i = 0; i <loops;i++)
   {
-    if(done==1)
-      break;
+
     Dest[i]= Source[i];
     pidle[i] = Dest[i].idle + Dest[i].iowait;
     pnonIdle[i] = Dest[i].user+Dest[i].system+Dest[i].nice+Dest[i].irq+Dest[i].softirq+Dest[i].steal;
