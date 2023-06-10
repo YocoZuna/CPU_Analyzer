@@ -80,7 +80,7 @@ int main(void){
              if(pthread_create(&threadID[t],NULL,Printer,(void*)pProcStatData)!=0)
             printf("Could not creat tread %ld\n",threadID[t]);
         }
-        else
+        else if (t==3)
         {
              if(pthread_create(&threadID[t],NULL,WatchDog,(void*)pProcStatData)!=0)
             printf("Could not creat tread %ld\n",threadID[t]);
@@ -102,13 +102,15 @@ void ShutDownProgram(int signum)
 
 
     done=1;
-
     for(int i=0;i<NUMOFTHREADS;i++)
     {
-        
-        //pthread_join(threadID[i],NULL);
-        pthread_cancel(threadID[i]);
+        int ret = 0;
+    
+        pthread_cancel(threadID[i]);   
+        pthread_join(threadID[i],NULL);
+
     }
+
 
     free(pArray);
     /* Destroying muexes and semaphores*/

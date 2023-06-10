@@ -1,43 +1,45 @@
 #include "main.h"
-#include "WatchDog.h"
-#include <signal.h>
-#include <unistd.h>
 
+
+int killThread = 0;
+static void CatchAlarm(void *Thread);
 void* WatchDog(void* ThreadToWatch)
 {
 
     while (!done)
     {
+        if(killThread!=0)
+        {
+           pthread_exit(NULL);
+        }
         sleep(1);
         CatchAlarm((void*)ThreadToWatch);
 
     }
-    
-
-
 
 }
 
 
-void CatchAlarm(void *Thread)
+static void CatchAlarm(void *Thread)
 {  
-    int kill = 0;
+
  Reader_Typdef* ReaderStruct = Thread;
   
    for(int i= 0;i<NUMOFTHREADS-1;i++){
-    printf("%d",ReaderStruct->WatchDog[0]);
+ 
     if(ReaderStruct->WatchDog[i]!=0)
     {
-        ReaderStruct->WatchDog[i]=0;
+        killThread=0;
     }
     else
     {
-        kill +=1;
+        killThread +=1;
     }
+    ReaderStruct->WatchDog[i]=0;
    }
-   if (kill>0)
+   if (killThread>0)
    {
-
+        
         char buffor[20];
         sprintf(buffor,"kill %d",PID);
         system(buffor);

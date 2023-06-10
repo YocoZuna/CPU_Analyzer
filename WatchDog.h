@@ -4,6 +4,6 @@
 #include "main.h"
 void* WatchDog(void* ThreadToWatch);
 
-void CatchAlarm(void *Thread);
+//void CatchAlarm(void *Thread);
 
 #endif

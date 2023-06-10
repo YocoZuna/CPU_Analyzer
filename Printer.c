@@ -11,7 +11,7 @@ void* Printer(void* pDataToPrint)
 
     while(!done)
     { 
-        
+
         Printer_PrintToConsole(DataToPrint,howManyCPUs);
         
         sleep(1);
@@ -25,7 +25,7 @@ void* Printer(void* pDataToPrint)
 static void Printer_PrintToConsole(Reader_Typdef* DataToPrint,int loops){
         DataToPrint->WatchDog[2] +=1;
         for(int i=0;i<loops-1;i++)
-        {
+        {   
             sem_wait(&DataToPrint->semPrinterStart);
             pthread_mutex_lock(&DataToPrint->mutexPrint);
             if (i==0)
@@ -33,7 +33,8 @@ static void Printer_PrintToConsole(Reader_Typdef* DataToPrint,int loops){
                 sleep(4000);
                 printf("CPU analyzer PID:%d, CPU %d\n",PID,loops-1);
             }   
-            
+            if(done==1)
+                pthread_exit(NULL);
 
             printf("%s\n",(char*)DataToPrint->Printer);
             pthread_mutex_unlock(&DataToPrint->mutexPrint);
