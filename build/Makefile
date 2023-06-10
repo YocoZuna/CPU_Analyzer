@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dawidzadlo/Documents/GitHub/CPU_Analyzer
+CMAKE_SOURCE_DIR = /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dawidzadlo/Documents/GitHub/CPU_Analyzer/build
+CMAKE_BINARY_DIR = /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/dawidzadlo/Documents/GitHub/CPU_Analyzer/build/CPackSourceConfig.cmake
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -117,9 +117,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dawidzadlo/Documents/GitHub/CPU_Analyzer/build/CMakeFiles /home/dawidzadlo/Documents/GitHub/CPU_Analyzer/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build/CMakeFiles /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dawidzadlo/Documents/GitHub/CPU_Analyzer/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -595,6 +595,30 @@ Reader.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPU_Analyzer.dir/build.make CMakeFiles/CPU_Analyzer.dir/Reader.c.s
 .PHONY : Reader.c.s
 
+WatchDog.o: WatchDog.c.o
+.PHONY : WatchDog.o
+
+# target to build an object file
+WatchDog.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPU_Analyzer.dir/build.make CMakeFiles/CPU_Analyzer.dir/WatchDog.c.o
+.PHONY : WatchDog.c.o
+
+WatchDog.i: WatchDog.c.i
+.PHONY : WatchDog.i
+
+# target to preprocess a source file
+WatchDog.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPU_Analyzer.dir/build.make CMakeFiles/CPU_Analyzer.dir/WatchDog.c.i
+.PHONY : WatchDog.c.i
+
+WatchDog.s: WatchDog.c.s
+.PHONY : WatchDog.s
+
+# target to generate assembly for a file
+WatchDog.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPU_Analyzer.dir/build.make CMakeFiles/CPU_Analyzer.dir/WatchDog.c.s
+.PHONY : WatchDog.c.s
+
 main.o: main.c.o
 .PHONY : main.o
 
@@ -668,6 +692,9 @@ help:
 	@echo "... Reader.o"
 	@echo "... Reader.i"
 	@echo "... Reader.s"
+	@echo "... WatchDog.o"
+	@echo "... WatchDog.i"
+	@echo "... WatchDog.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

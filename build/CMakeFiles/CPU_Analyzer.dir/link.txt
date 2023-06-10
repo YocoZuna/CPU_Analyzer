@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/CPU_Analyzer.dir/main.c.o CMakeFiles/CPU_Analyzer.dir/Reader.c.o CMakeFiles/CPU_Analyzer.dir/Analyzer.c.o CMakeFiles/CPU_Analyzer.dir/Printer.c.o CMakeFiles/CPU_Analyzer.dir/WatchDog.c.o -o CPU_Analyzer 
