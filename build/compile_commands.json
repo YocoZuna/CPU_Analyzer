@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build",
+  "command": "/usr/bin/gcc -g -std=gnu11 -o CMakeFiles/CPU_Analyzer.dir/main.c.o -c /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/main.c",
+  "file": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/main.c"
+},
+{
+  "directory": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build",
+  "command": "/usr/bin/gcc -g -std=gnu11 -o CMakeFiles/CPU_Analyzer.dir/Reader.c.o -c /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Reader.c",
+  "file": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Reader.c"
+},
+{
+  "directory": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build",
+  "command": "/usr/bin/gcc -g -std=gnu11 -o CMakeFiles/CPU_Analyzer.dir/Analyzer.c.o -c /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Analyzer.c",
+  "file": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Analyzer.c"
+},
+{
+  "directory": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build",
+  "command": "/usr/bin/gcc -g -std=gnu11 -o CMakeFiles/CPU_Analyzer.dir/Printer.c.o -c /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Printer.c",
+  "file": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Printer.c"
+},
+{
+  "directory": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build",
+  "command": "/usr/bin/gcc -g -std=gnu11 -o CMakeFiles/CPU_Analyzer.dir/WatchDog.c.o -c /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/WatchDog.c",
+  "file": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/WatchDog.c"
+},
+{
+  "directory": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build",
+  "command": "/usr/bin/gcc -g -std=gnu11 -o CMakeFiles/CPU_Analyzer.dir/MyLogger.c.o -c /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/MyLogger.c",
+  "file": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/MyLogger.c"
+}
+]

@@ -7,7 +7,7 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${file}","Reader.c","Printer.c","Analyzer.c","WatchDog.c",
+                "${file}","Reader.c","Printer.c","Analyzer.c","WatchDog.c","MyLogger.c",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],

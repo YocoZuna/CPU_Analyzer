@@ -5,6 +5,9 @@
 #include "Analyzer.h"
 #include "Printer.h"
 #include "WatchDog.h"
+
+#include "MyLogger.h"
+
 #include <string.h>
 #include <stdlib.h>
 #include <pthread.h>
@@ -12,8 +15,8 @@
 #include <assert.h>
 #include <semaphore.h>
 #include <signal.h>
-#define NUMOFTHREADS 4
-#define NUMOFSEMA 4
-#define NUMOFMUTEX 2
+#define NUMOFTHREADS 5
+#define NUMOFSEMA 5
+#define NUMOFMUTEX 3
 void ShutDownProgram(int signum);
 #endif

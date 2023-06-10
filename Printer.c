@@ -1,7 +1,7 @@
 #include "main.h"
-
+extern char loggerBufor[100];
 static void Printer_PrintToConsole(Reader_Typdef* DataToPrint,int loops);
-
+static void WirteToLogger(void* data,char* text);
 /*
 *  Description - Printer thread 
 *
@@ -51,10 +51,20 @@ static void Printer_PrintToConsole(Reader_Typdef* DataToPrint,int loops){
             }   
     
            
-           
+            
             printf("%s\n",(char*)DataToPrint->Printer);
             pthread_mutex_unlock(&DataToPrint->mutexPrint);
             sem_post(&DataToPrint->semPrinterDone);
             
         }
+}
+
+static void WirteToLogger(void* data,char* text)
+{
+    Reader_Typdef* dataToLog = data;
+        pthread_mutex_lock(&dataToLog->mutexLog);
+        
+        sprintf(dataToLog->Logger,"%s",text);
+        pthread_mutex_unlock(&dataToLog->mutexLog);
+        sem_post(&dataToLog->semLogger);
 }

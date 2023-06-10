@@ -7,7 +7,8 @@
 *
 *  Param  - None
 */
-
+extern char loggerBufor[100];
+static void WirteToLogger(void* data,char* text);
 int Reader_ReadHowManyCPUs(void)
 {
     /* Pattern to look for */
@@ -59,7 +60,7 @@ void* Reader_ReadDataFromProcStat(void* pArray)
     int i,dummy;
     while(!done)
     {
-        
+        //sleep(4);
         ReaderStruct = pArray;
         sem_wait(&ReaderStruct->semWaitForData);
         pthread_mutex_lock(&ReaderStruct->mutex);
@@ -81,4 +82,14 @@ void* Reader_ReadDataFromProcStat(void* pArray)
     }
 
     pthread_exit(NULL);
+}
+
+static void WirteToLogger(void* data,char* text)
+{
+    Reader_Typdef* dataToLog = data;
+        pthread_mutex_lock(&dataToLog->mutexLog);
+        
+        sprintf(dataToLog->Logger,"%s",text);
+        pthread_mutex_unlock(&dataToLog->mutexLog);
+        sem_post(&dataToLog->semLogger);
 }

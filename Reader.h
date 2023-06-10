@@ -34,8 +34,11 @@ typedef struct
     void *Printer;
     sem_t semPrinterDone;
     sem_t semPrinterStart;
+    sem_t semLogger;
     pthread_mutex_t mutexPrint;
+    pthread_mutex_t mutexLog;
     int WatchDog[4];
+    char Logger[100];
 }Reader_Typdef;
 
 /*Function  to read how many CPUs machine has*/

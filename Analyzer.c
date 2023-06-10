@@ -1,9 +1,9 @@
 #include "Analyzer.h"
 
 
-
+extern char loggerBufor[100];
 static void CollectData(ProcStat_Typedef* Dest,ProcStat_Typedef* Source,int loops,long long int*pidle,long long int*pnonIdle,long long int*ptotal);
-
+static void WirteToLogger(void* data,char* text);
 void* Analzyer(void *DataFromReader)
 {   
 
@@ -85,4 +85,14 @@ static void CollectData(ProcStat_Typedef* Dest,ProcStat_Typedef* Source,int loop
     pnonIdle[i] = Dest[i].user+Dest[i].system+Dest[i].nice+Dest[i].irq+Dest[i].softirq+Dest[i].steal;
     ptotal[i] = pidle[i]+pnonIdle[i];
   }
+}
+
+static void WirteToLogger(void* data,char* text)
+{
+    Reader_Typdef* dataToLog = data;
+        pthread_mutex_lock(&dataToLog->mutexLog);
+        
+        sprintf(dataToLog->Logger,"%s",text);
+        pthread_mutex_unlock(&dataToLog->mutexLog);
+        sem_post(&dataToLog->semLogger);
 }

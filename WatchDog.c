@@ -1,9 +1,9 @@
 #include "main.h"
 
-
+extern char loggerBufor[100];
 int killThread = 0;
 static void CatchAlarm(void *Thread);
-
+static void WirteToLogger(void* data,char* text);
 /*
 *  Description - Runs watchdog thread
 *
@@ -41,7 +41,7 @@ static void CatchAlarm(void *Thread)
     Reader_Typdef* ReaderStruct = Thread;
 
    /* NUum of thread -1 because last thread is watchdog */
-   for(int i= 0;i<NUMOFTHREADS-1;i++){
+   for(int i= 0;i<NUMOFTHREADS-2;i++){
  
     /* REading data from struct*/
     if(ReaderStruct->WatchDog[i]!=0)
@@ -50,7 +50,9 @@ static void CatchAlarm(void *Thread)
     }
     else
     {
-        printf("Thread %d failed\n",i);
+        sprintf(loggerBufor,"Thread %d failed\n",i);
+        WirteToLogger(Thread,loggerBufor);
+        
         killThread +=1;
     }
     ReaderStruct->WatchDog[i]=0;
@@ -64,4 +66,13 @@ static void CatchAlarm(void *Thread)
     
    }
 
+}
+static void WirteToLogger(void* data,char* text)
+{
+    Reader_Typdef* dataToLog = data;
+        pthread_mutex_lock(&dataToLog->mutexLog);
+        
+        sprintf(dataToLog->Logger,"%s",text);
+        pthread_mutex_unlock(&dataToLog->mutexLog);
+        sem_post(&dataToLog->semLogger);
 }
