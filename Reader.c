@@ -60,7 +60,7 @@ void* Reader_ReadDataFromProcStat(void* pArray)
     int i,dummy;
     while(!done)
     {
-        //sleep(4);
+       
         ReaderStruct = pArray;
         sem_wait(&ReaderStruct->semWaitForData);
         pthread_mutex_lock(&ReaderStruct->mutex);
