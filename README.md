@@ -18,6 +18,6 @@ this is only proper way to clean up program.
 
 Application has been tested with valgrind - no leaks detected  
 ## Valgrind result 
-![This is an image](https://github.com/YocoZuna/CPU_Analyzer/blob/main/valgrind.png)
+![This is an image](https://github.com/YocoZuna/CPU_Analyzer/blob/main/ValGrindAfter_AddingWatchDog.png)
 
 
