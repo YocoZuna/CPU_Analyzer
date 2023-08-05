@@ -1,5 +1,6 @@
 add_executable(Src
- main.c main.h
+ #main.c
+ TestRunnet.c
 )
 
 target_link_libraries(Src

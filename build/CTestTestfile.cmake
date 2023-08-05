@@ -7,3 +7,4 @@
 subdirs("UnityFrameWork")
 subdirs("Src")
 subdirs("Includs")
+subdirs("Test")

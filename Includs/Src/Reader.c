@@ -7,6 +7,7 @@
 *
 *  Param  - None
 */
+
 extern char loggerBufor[100];
 static void WirteToLogger(void* data,char* text);
 int Reader_ReadHowManyCPUs(void)

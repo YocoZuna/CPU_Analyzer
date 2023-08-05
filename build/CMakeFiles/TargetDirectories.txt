@@ -49,3 +49,9 @@
 /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build/Includs/CMakeFiles/test.dir
 /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build/Includs/CMakeFiles/edit_cache.dir
 /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build/Includs/CMakeFiles/rebuild_cache.dir
+/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build/Test/CMakeFiles/Test.dir
+/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build/Test/CMakeFiles/package.dir
+/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build/Test/CMakeFiles/package_source.dir
+/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build/Test/CMakeFiles/test.dir
+/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build/Test/CMakeFiles/edit_cache.dir
+/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build/Test/CMakeFiles/rebuild_cache.dir

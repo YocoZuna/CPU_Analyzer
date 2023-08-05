@@ -18,5 +18,6 @@
 #define NUMOFTHREADS 5
 #define NUMOFSEMA 5
 #define NUMOFMUTEX 3
+
 void ShutDownProgram(int signum);
 #endif

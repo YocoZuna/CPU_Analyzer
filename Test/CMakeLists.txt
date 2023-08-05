@@ -3,8 +3,8 @@ Src/Dummy.c
 )
 
 target_include_directories(Test PUBLIC
-Inc
 Includs
+UnityFrameWork
 ${CMAKE_CURRENT_LIST_DIR})
 
 

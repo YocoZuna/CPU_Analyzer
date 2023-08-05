@@ -2,6 +2,7 @@
 #include "main.h"
 #include <signal.h>
 #include <features.h>
+
 /* Semaphores and mutex to synchronize Reader and Analyzer*/
 sem_t semaphoreWaitForData;
 sem_t semaphoreDataReady;

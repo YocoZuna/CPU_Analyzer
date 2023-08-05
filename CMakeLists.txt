@@ -6,7 +6,7 @@ enable_testing()
 add_subdirectory(UnityFrameWork)
 add_subdirectory(Src)
 add_subdirectory(Includs)
-
+add_subdirectory(Test)
 
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})

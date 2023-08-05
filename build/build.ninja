@@ -615,8 +615,8 @@ build UnityFrameWork/rebuild_cache: phony UnityFrameWork/CMakeFiles/rebuild_cach
 
 build cmake_object_order_depends_target_Src: phony || cmake_object_order_depends_target_Includs cmake_object_order_depends_target_UnityFrameWork
 
-build Src/CMakeFiles/Src.dir/main.c.o: C_COMPILER__Src_unscanned_Debug /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Src/main.c || cmake_object_order_depends_target_Src
-  DEP_FILE = Src/CMakeFiles/Src.dir/main.c.o.d
+build Src/CMakeFiles/Src.dir/TestRunnet.c.o: C_COMPILER__Src_unscanned_Debug /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Src/TestRunnet.c || cmake_object_order_depends_target_Src
+  DEP_FILE = Src/CMakeFiles/Src.dir/TestRunnet.c.o.d
   FLAGS = -g
   INCLUDES = -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/Inc -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/Src -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/UnityFrameWork
   OBJECT_DIR = Src/CMakeFiles/Src.dir
@@ -630,7 +630,7 @@ build Src/CMakeFiles/Src.dir/main.c.o: C_COMPILER__Src_unscanned_Debug /home/daw
 #############################################
 # Link the executable Src/Src
 
-build Src/Src: C_EXECUTABLE_LINKER__Src_Debug Src/CMakeFiles/Src.dir/main.c.o | Includs/libIncluds.a UnityFrameWork/libUnityFrameWork.a || Includs/libIncluds.a UnityFrameWork/libUnityFrameWork.a
+build Src/Src: C_EXECUTABLE_LINKER__Src_Debug Src/CMakeFiles/Src.dir/TestRunnet.c.o | Includs/libIncluds.a UnityFrameWork/libUnityFrameWork.a || Includs/libIncluds.a UnityFrameWork/libUnityFrameWork.a
   FLAGS = -g
   LINK_FLAGS = -rdynamic
   LINK_LIBRARIES = Includs/libIncluds.a  UnityFrameWork/libUnityFrameWork.a
@@ -824,15 +824,115 @@ build Includs/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build Includs/rebuild_cache: phony Includs/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target Test
+
+
+#############################################
+# Order-only phony target for Test
+
+build cmake_object_order_depends_target_Test: phony || Test/CMakeFiles/Test.dir
+
+build Test/CMakeFiles/Test.dir/Src/Dummy.c.o: C_COMPILER__Test_unscanned_Debug /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Test/Src/Dummy.c || cmake_object_order_depends_target_Test
+  DEP_FILE = Test/CMakeFiles/Test.dir/Src/Dummy.c.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Test/Includs -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Test/UnityFrameWork -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Test
+  OBJECT_DIR = Test/CMakeFiles/Test.dir
+  OBJECT_FILE_DIR = Test/CMakeFiles/Test.dir/Src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target Test
+
+
+#############################################
+# Link the static library Test/libTest.a
+
+build Test/libTest.a: C_STATIC_LIBRARY_LINKER__Test_Debug Test/CMakeFiles/Test.dir/Src/Dummy.c.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = Test/CMakeFiles/Test.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Test/libTest.a
+  TARGET_PDB = Test.a.dbg
+
+
+#############################################
+# Utility command for package
+
+build Test/CMakeFiles/package.util: CUSTOM_COMMAND Test/all
+  COMMAND = cd /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build && /usr/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build Test/package: phony Test/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build Test/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build Test/package_source: phony Test/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for test
+
+build Test/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build/Test && /usr/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build Test/test: phony Test/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build Test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build/Test && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Test/edit_cache: phony Test/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Test/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build/Test && /usr/bin/cmake --regenerate-during-build -S/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer -B/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Test/rebuild_cache: phony Test/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build Includs: phony Includs/libIncluds.a
 
 build Src: phony Src/Src
 
+build Test: phony Test/libTest.a
+
 build UnityFrameWork: phony UnityFrameWork/libUnityFrameWork.a
 
 build libIncluds.a: phony Includs/libIncluds.a
+
+build libTest.a: phony Test/libTest.a
 
 build libUnityFrameWork.a: phony UnityFrameWork/libUnityFrameWork.a
 
@@ -844,7 +944,7 @@ build libUnityFrameWork.a: phony UnityFrameWork/libUnityFrameWork.a
 #############################################
 # Folder: /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build
 
-build all: phony UnityFrameWork/all Src/all Includs/all
+build all: phony UnityFrameWork/all Src/all Includs/all Test/all
 
 # =============================================================================
 
@@ -859,6 +959,13 @@ build Includs/all: phony Includs/libIncluds.a
 # Folder: /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build/Src
 
 build Src/all: phony Src/Src
+
+# =============================================================================
+
+#############################################
+# Folder: /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build/Test
+
+build Test/all: phony Test/libTest.a
 
 # =============================================================================
 
@@ -879,14 +986,14 @@ build UnityFrameWork/all: phony UnityFrameWork/libUnityFrameWork.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/CMakeLists.txt /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/CMakeLists.txt /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Src/CMakeLists.txt /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/UnityFrameWork/CMakeLists.txt /usr/share/cmake-3.26/Modules/CMakeCInformation.cmake /usr/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.26/Modules/CPack.cmake /usr/share/cmake-3.26/Modules/CPackComponent.cmake /usr/share/cmake-3.26/Modules/CTest.cmake /usr/share/cmake-3.26/Modules/CTestTargets.cmake /usr/share/cmake-3.26/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.26/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.26/Modules/Compiler/Clang.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU.cmake /usr/share/cmake-3.26/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.26/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.26/Modules/Platform/Linux.cmake /usr/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.26/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/CMakeLists.txt /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/CMakeLists.txt /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Src/CMakeLists.txt /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Test/CMakeLists.txt /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/UnityFrameWork/CMakeLists.txt /usr/share/cmake-3.26/Modules/CMakeCInformation.cmake /usr/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.26/Modules/CPack.cmake /usr/share/cmake-3.26/Modules/CPackComponent.cmake /usr/share/cmake-3.26/Modules/CTest.cmake /usr/share/cmake-3.26/Modules/CTestTargets.cmake /usr/share/cmake-3.26/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU.cmake /usr/share/cmake-3.26/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.26/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.26/Modules/Platform/Linux.cmake /usr/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.26/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/CMakeLists.txt /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/CMakeLists.txt /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Src/CMakeLists.txt /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/UnityFrameWork/CMakeLists.txt /usr/share/cmake-3.26/Modules/CMakeCInformation.cmake /usr/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.26/Modules/CPack.cmake /usr/share/cmake-3.26/Modules/CPackComponent.cmake /usr/share/cmake-3.26/Modules/CTest.cmake /usr/share/cmake-3.26/Modules/CTestTargets.cmake /usr/share/cmake-3.26/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.26/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.26/Modules/Compiler/Clang.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU.cmake /usr/share/cmake-3.26/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.26/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.26/Modules/Platform/Linux.cmake /usr/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.26/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
+build /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/CMakeLists.txt /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/CMakeLists.txt /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Src/CMakeLists.txt /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Test/CMakeLists.txt /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/UnityFrameWork/CMakeLists.txt /usr/share/cmake-3.26/Modules/CMakeCInformation.cmake /usr/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.26/Modules/CPack.cmake /usr/share/cmake-3.26/Modules/CPackComponent.cmake /usr/share/cmake-3.26/Modules/CTest.cmake /usr/share/cmake-3.26/Modules/CTestTargets.cmake /usr/share/cmake-3.26/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU.cmake /usr/share/cmake-3.26/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.26/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.26/Modules/Platform/Linux.cmake /usr/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.26/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
 
 
 #############################################

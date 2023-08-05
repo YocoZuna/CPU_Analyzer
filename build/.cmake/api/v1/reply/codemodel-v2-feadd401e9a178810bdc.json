@@ -10,7 +10,8 @@
 					[
 						1,
 						2,
-						3
+						3,
+						4
 					],
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
@@ -63,7 +64,7 @@
 					"source" : "UnityFrameWork",
 					"targetIndexes" : 
 					[
-						30
+						31
 					]
 				},
 				{
@@ -95,6 +96,21 @@
 					[
 						18
 					]
+				},
+				{
+					"build" : "Test",
+					"jsonFile" : "directory-Test-Debug-3fc60f65c6de5401f5db.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Test",
+					"targetIndexes" : 
+					[
+						30
+					]
 				}
 			],
 			"name" : "Debug",
@@ -106,7 +122,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					],
 					"name" : "TestCmake",
 					"targetIndexes" : 
@@ -141,7 +158,8 @@
 						27,
 						28,
 						29,
-						30
+						30,
+						31
 					]
 				}
 			],
@@ -353,8 +371,15 @@
 				{
 					"directoryIndex" : 2,
 					"id" : "Src::@fffd7673bb2fd0d58c2a",
-					"jsonFile" : "target-Src-Debug-788e87d676e999a10840.json",
+					"jsonFile" : "target-Src-Debug-2bb2c498a8aa413debab.json",
 					"name" : "Src",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "Test::@c0a5cca43b8aa79eb50e",
+					"jsonFile" : "target-Test-Debug-b8487c23e3885b26a238.json",
+					"name" : "Test",
 					"projectIndex" : 0
 				},
 				{

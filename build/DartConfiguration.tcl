@@ -14,7 +14,7 @@ CostDataFile:
 Site: YocoZuna
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Linux-clang++
+BuildName: Linux-g++
 
 # Subprojects
 LabelsForSubprojects: 
@@ -63,7 +63,7 @@ UpdateOptions:
 UpdateType: git
 
 # Compiler info
-Compiler: /usr/bin/clang++
+Compiler: /usr/bin/g++
 CompilerVersion: 
 
 # Dynamic analysis (MemCheck)
