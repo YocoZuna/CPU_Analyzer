@@ -14,13 +14,14 @@ CostDataFile:
 Site: YocoZuna
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Linux-cc
+BuildName: Linux-clang++
 
 # Subprojects
 LabelsForSubprojects: 
 
 # Submission information
 SubmitURL: http://
+SubmitInactivityTimeout: 
 
 # Dashboard start time
 NightlyStartTime: 00:00:00 EDT
@@ -62,7 +63,7 @@ UpdateOptions:
 UpdateType: git
 
 # Compiler info
-Compiler: 
+Compiler: /usr/bin/clang++
 CompilerVersion: 
 
 # Dynamic analysis (MemCheck)
