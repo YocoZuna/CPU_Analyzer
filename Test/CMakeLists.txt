@@ -1,10 +1,15 @@
 add_library(Test STATIC
-Src/Dummy.c
+Src/TestFixture.c 
+
 )
 
 target_include_directories(Test PUBLIC
-Includs
-UnityFrameWork
+Inc
+Src
 ${CMAKE_CURRENT_LIST_DIR})
 
+target_link_libraries(Test PUBLIC
+UnityFrameWork
+Includs
+)
 

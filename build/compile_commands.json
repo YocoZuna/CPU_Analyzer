@@ -1,62 +1,52 @@
 [
 {
-  "directory": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build",
-  "command": "/usr/bin/gcc -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/UnityFrameWork -g -o UnityFrameWork/CMakeFiles/UnityFrameWork.dir/unity.c.o -c /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/UnityFrameWork/unity.c",
-  "file": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/UnityFrameWork/unity.c",
-  "output": "UnityFrameWork/CMakeFiles/UnityFrameWork.dir/unity.c.o"
+  "directory": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/build/UnityFrameWork",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/UnityFrameWork.dir/includes_C.rsp -g -o CMakeFiles\\UnityFrameWork.dir\\unity.c.obj -c \"C:\\Users\\Dawid Zadlo\\Desktop\\CPU_Analyzer\\UnityFrameWork\\unity.c\"",
+  "file": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/UnityFrameWork/unity.c"
 },
 {
-  "directory": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build",
-  "command": "/usr/bin/gcc -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/UnityFrameWork -g -o UnityFrameWork/CMakeFiles/UnityFrameWork.dir/unity_fixture.c.o -c /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/UnityFrameWork/unity_fixture.c",
-  "file": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/UnityFrameWork/unity_fixture.c",
-  "output": "UnityFrameWork/CMakeFiles/UnityFrameWork.dir/unity_fixture.c.o"
+  "directory": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/build/UnityFrameWork",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/UnityFrameWork.dir/includes_C.rsp -g -o CMakeFiles\\UnityFrameWork.dir\\unity_fixture.c.obj -c \"C:\\Users\\Dawid Zadlo\\Desktop\\CPU_Analyzer\\UnityFrameWork\\unity_fixture.c\"",
+  "file": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/UnityFrameWork/unity_fixture.c"
 },
 {
-  "directory": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build",
-  "command": "/usr/bin/gcc -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/UnityFrameWork -g -o UnityFrameWork/CMakeFiles/UnityFrameWork.dir/unity_memory.c.o -c /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/UnityFrameWork/unity_memory.c",
-  "file": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/UnityFrameWork/unity_memory.c",
-  "output": "UnityFrameWork/CMakeFiles/UnityFrameWork.dir/unity_memory.c.o"
+  "directory": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/build/UnityFrameWork",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/UnityFrameWork.dir/includes_C.rsp -g -o CMakeFiles\\UnityFrameWork.dir\\unity_memory.c.obj -c \"C:\\Users\\Dawid Zadlo\\Desktop\\CPU_Analyzer\\UnityFrameWork\\unity_memory.c\"",
+  "file": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/UnityFrameWork/unity_memory.c"
 },
 {
-  "directory": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build",
-  "command": "/usr/bin/gcc -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/Inc -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/Src -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/UnityFrameWork -g -o Src/CMakeFiles/Src.dir/TestRunnet.c.o -c /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Src/TestRunnet.c",
-  "file": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Src/TestRunnet.c",
-  "output": "Src/CMakeFiles/Src.dir/TestRunnet.c.o"
+  "directory": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/build/Src",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/Src.dir/includes_C.rsp -g -o CMakeFiles\\Src.dir\\TestRunnet.c.obj -c \"C:\\Users\\Dawid Zadlo\\Desktop\\CPU_Analyzer\\Src\\TestRunnet.c\"",
+  "file": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/Src/TestRunnet.c"
 },
 {
-  "directory": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build",
-  "command": "/usr/bin/gcc -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/Inc -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/Src -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs -g -o Includs/CMakeFiles/Includs.dir/Src/Printer.c.o -c /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/Src/Printer.c",
-  "file": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/Src/Printer.c",
-  "output": "Includs/CMakeFiles/Includs.dir/Src/Printer.c.o"
+  "directory": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/build/Includs",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/Includs.dir/includes_C.rsp -g -o CMakeFiles\\Includs.dir\\Src\\Printer.c.obj -c \"C:\\Users\\Dawid Zadlo\\Desktop\\CPU_Analyzer\\Includs\\Src\\Printer.c\"",
+  "file": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/Includs/Src/Printer.c"
 },
 {
-  "directory": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build",
-  "command": "/usr/bin/gcc -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/Inc -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/Src -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs -g -o Includs/CMakeFiles/Includs.dir/Src/WatchDog.c.o -c /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/Src/WatchDog.c",
-  "file": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/Src/WatchDog.c",
-  "output": "Includs/CMakeFiles/Includs.dir/Src/WatchDog.c.o"
+  "directory": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/build/Includs",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/Includs.dir/includes_C.rsp -g -o CMakeFiles\\Includs.dir\\Src\\WatchDog.c.obj -c \"C:\\Users\\Dawid Zadlo\\Desktop\\CPU_Analyzer\\Includs\\Src\\WatchDog.c\"",
+  "file": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/Includs/Src/WatchDog.c"
 },
 {
-  "directory": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build",
-  "command": "/usr/bin/gcc -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/Inc -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/Src -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs -g -o Includs/CMakeFiles/Includs.dir/Src/Reader.c.o -c /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/Src/Reader.c",
-  "file": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/Src/Reader.c",
-  "output": "Includs/CMakeFiles/Includs.dir/Src/Reader.c.o"
+  "directory": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/build/Includs",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/Includs.dir/includes_C.rsp -g -o CMakeFiles\\Includs.dir\\Src\\Reader.c.obj -c \"C:\\Users\\Dawid Zadlo\\Desktop\\CPU_Analyzer\\Includs\\Src\\Reader.c\"",
+  "file": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/Includs/Src/Reader.c"
 },
 {
-  "directory": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build",
-  "command": "/usr/bin/gcc -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/Inc -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/Src -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs -g -o Includs/CMakeFiles/Includs.dir/Src/MyLogger.c.o -c /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/Src/MyLogger.c",
-  "file": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/Src/MyLogger.c",
-  "output": "Includs/CMakeFiles/Includs.dir/Src/MyLogger.c.o"
+  "directory": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/build/Includs",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/Includs.dir/includes_C.rsp -g -o CMakeFiles\\Includs.dir\\Src\\MyLogger.c.obj -c \"C:\\Users\\Dawid Zadlo\\Desktop\\CPU_Analyzer\\Includs\\Src\\MyLogger.c\"",
+  "file": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/Includs/Src/MyLogger.c"
 },
 {
-  "directory": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build",
-  "command": "/usr/bin/gcc -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/Inc -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/Src -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs -g -o Includs/CMakeFiles/Includs.dir/Src/Analyzer.c.o -c /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/Src/Analyzer.c",
-  "file": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Includs/Src/Analyzer.c",
-  "output": "Includs/CMakeFiles/Includs.dir/Src/Analyzer.c.o"
+  "directory": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/build/Includs",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/Includs.dir/includes_C.rsp -g -o CMakeFiles\\Includs.dir\\Src\\Analyzer.c.obj -c \"C:\\Users\\Dawid Zadlo\\Desktop\\CPU_Analyzer\\Includs\\Src\\Analyzer.c\"",
+  "file": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/Includs/Src/Analyzer.c"
 },
 {
-  "directory": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/build",
-  "command": "/usr/bin/gcc -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Test/Includs -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Test/UnityFrameWork -I/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Test -g -o Test/CMakeFiles/Test.dir/Src/Dummy.c.o -c /home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Test/Src/Dummy.c",
-  "file": "/home/dawid_zadlo/Documents/GitHub/CPU_Analyzer/Test/Src/Dummy.c",
-  "output": "Test/CMakeFiles/Test.dir/Src/Dummy.c.o"
+  "directory": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/build/Test",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe  @CMakeFiles/Test.dir/includes_C.rsp -g -o CMakeFiles\\Test.dir\\Src\\TestFixture.c.obj -c \"C:\\Users\\Dawid Zadlo\\Desktop\\CPU_Analyzer\\Test\\Src\\TestFixture.c\"",
+  "file": "C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/Test/Src/TestFixture.c"
 }
 ]

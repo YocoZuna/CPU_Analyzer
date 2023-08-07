@@ -1,0 +1,2 @@
+C:\msys64\mingw64\bin\ar.exe qc libUnityFrameWork.a CMakeFiles/UnityFrameWork.dir/unity.c.obj CMakeFiles/UnityFrameWork.dir/unity_fixture.c.obj CMakeFiles/UnityFrameWork.dir/unity_memory.c.obj
+C:\msys64\mingw64\bin\ranlib.exe libUnityFrameWork.a

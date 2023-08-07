@@ -1,0 +1,19 @@
+Start testing: Aug 07 15:18 Central European Daylight Time
+----------------------------------------------------------
+Unable to find executable: Src
+1/1 Testing: Test
+1/1 Test: Test
+Command: ""
+Directory: C:/Users/Dawid Zadlo/Desktop/CPU_Analyzer/build
+"Test" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Test" end time: Aug 07 15:18 Central European Daylight Time
+"Test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 07 15:18 Central European Daylight Time

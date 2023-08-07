@@ -1,0 +1,2 @@
+C:\msys64\mingw64\bin\ar.exe qc libIncluds.a CMakeFiles/Includs.dir/Src/Printer.c.obj CMakeFiles/Includs.dir/Src/WatchDog.c.obj CMakeFiles/Includs.dir/Src/Reader.c.obj CMakeFiles/Includs.dir/Src/MyLogger.c.obj CMakeFiles/Includs.dir/Src/Analyzer.c.obj
+C:\msys64\mingw64\bin\ranlib.exe libIncluds.a

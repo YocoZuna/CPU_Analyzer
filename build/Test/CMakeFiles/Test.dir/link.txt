@@ -1,0 +1,2 @@
+C:\msys64\mingw64\bin\ar.exe qc libTest.a CMakeFiles/Test.dir/Src/TestFixture.c.obj
+C:\msys64\mingw64\bin\ranlib.exe libTest.a
