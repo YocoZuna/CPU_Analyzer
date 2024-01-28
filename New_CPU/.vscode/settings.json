@@ -1,0 +1,25 @@
+{
+    "files.associations": {
+        "reader.h": "c",
+        "analayzer.h": "c",
+        "ranges": "c",
+        "main.h": "c",
+        "array": "c",
+        "string_view": "c",
+        "initializer_list": "c",
+        "utility": "c",
+        "string.h": "c",
+        "time.h": "c",
+        "circuralbuffer.h": "c",
+        "pthread.h": "c",
+        "stdatomic.h": "c",
+        "watchdog.h": "c",
+        "cmath": "c",
+        "string": "c",
+        "unity.h": "c",
+        "printer.h": "c",
+        "unity_fixture.h": "c",
+        "loger.h": "c",
+        "stdlib.h": "c"
+    }
+}

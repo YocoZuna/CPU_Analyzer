@@ -1,0 +1,144 @@
+When occured:Sun Jan 28 14:59:44 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 0 just started
+ 
+When occured:Sun Jan 28 14:59:44 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 1 just started
+ 
+When occured:Sun Jan 28 14:59:44 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 2 just started
+ 
+When occured:Sun Jan 28 14:59:44 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 3 just started
+ 
+When occured:Sun Jan 28 14:59:44 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 4 just started
+ 
+When occured:Sun Jan 28 14:59:51 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:104 SIGTERM has been detected closing application
+ 
+When occured:Sun Jan 28 15:02:49 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 0 just started
+ 
+When occured:Sun Jan 28 15:02:49 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 1 just started
+ 
+When occured:Sun Jan 28 15:02:49 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 2 just started
+ 
+When occured:Sun Jan 28 15:02:49 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 3 just started
+ 
+When occured:Sun Jan 28 15:02:49 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 4 just started
+ 
+When occured:Sun Jan 28 15:03:14 2024
+ WARRNING File:/home/dawid_zadlo/Desktop/Test/Includs/Src/WatchDog.c Line:43 Thread ANALAZYER died
+ 
+When occured:Sun Jan 28 15:04:22 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 0 just started
+ 
+When occured:Sun Jan 28 15:04:22 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 1 just started
+ 
+When occured:Sun Jan 28 15:04:22 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 2 just started
+ 
+When occured:Sun Jan 28 15:04:22 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 3 just started
+ 
+When occured:Sun Jan 28 15:04:22 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 4 just started
+ 
+When occured:Sun Jan 28 15:04:48 2024
+ WARRNING File:/home/dawid_zadlo/Desktop/Test/Includs/Src/WatchDog.c Line:43 Thread READER died
+ 
+When occured:Sun Jan 28 15:04:48 2024
+ WARRNING File:/home/dawid_zadlo/Desktop/Test/Includs/Src/WatchDog.c Line:43 Thread ANALAZYER died
+ 
+When occured:Sun Jan 28 15:04:48 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:104 SIGTERM has been detected closing application
+ 
+When occured:Sun Jan 28 15:05:42 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 0 just started
+ 
+When occured:Sun Jan 28 15:05:42 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 1 just started
+ 
+When occured:Sun Jan 28 15:05:42 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 2 just started
+ 
+When occured:Sun Jan 28 15:05:42 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 3 just started
+ 
+When occured:Sun Jan 28 15:05:42 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 4 just started
+ 
+When occured:Sun Jan 28 15:05:56 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 0 just started
+ 
+When occured:Sun Jan 28 15:05:56 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 1 just started
+ 
+When occured:Sun Jan 28 15:05:56 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 2 just started
+ 
+When occured:Sun Jan 28 15:05:56 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 3 just started
+ 
+When occured:Sun Jan 28 15:05:56 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 4 just started
+ 
+When occured:Sun Jan 28 15:07:59 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 0 just started
+ 
+When occured:Sun Jan 28 15:08:00 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 1 just started
+ 
+When occured:Sun Jan 28 15:08:02 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 2 just started
+ 
+When occured:Sun Jan 28 15:08:03 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 3 just started
+ 
+When occured:Sun Jan 28 15:08:04 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 4 just started
+ 
+When occured:Sun Jan 28 15:08:11 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:104 SIGTERM has been detected closing application
+ 
+When occured:Sun Jan 28 15:08:45 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 0 just started
+ 
+When occured:Sun Jan 28 15:08:46 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 1 just started
+ 
+When occured:Sun Jan 28 15:08:47 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 2 just started
+ 
+When occured:Sun Jan 28 15:08:48 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 3 just started
+ 
+When occured:Sun Jan 28 15:08:49 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 4 just started
+ 
+When occured:Sun Jan 28 15:08:52 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:104 SIGTERM has been detected closing application
+ 
+When occured:Sun Jan 28 15:09:43 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 0 just started
+ 
+When occured:Sun Jan 28 15:09:44 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 1 just started
+ 
+When occured:Sun Jan 28 15:09:45 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 2 just started
+ 
+When occured:Sun Jan 28 15:09:46 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 3 just started
+ 
+When occured:Sun Jan 28 15:09:47 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:61 Thread 4 just started
+ 
+When occured:Sun Jan 28 15:09:52 2024
+ INFO File:/home/dawid_zadlo/Desktop/Test/Src/App.c Line:104 SIGTERM has been detected closing application
+ 

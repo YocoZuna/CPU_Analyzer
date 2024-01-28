@@ -1,0 +1,15 @@
+==76995== Memcheck, a memory error detector
+==76995== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==76995== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==76995== Command: ./CPUA
+==76995== Parent PID: 76774
+==76995== 
+==76995== 
+==76995== HEAP SUMMARY:
+==76995==     in use at exit: 0 bytes in 0 blocks
+==76995==   total heap usage: 59 allocs, 59 frees, 55,416 bytes allocated
+==76995== 
+==76995== All heap blocks were freed -- no leaks are possible
+==76995== 
+==76995== For lists of detected and suppressed errors, rerun with: -s
+==76995== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
